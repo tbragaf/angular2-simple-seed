@@ -1,0 +1,22 @@
+{
+  "name": "ng2-traceur-gulp",
+  "version": "0.0.1",
+  "description": "Angular 2 with Traceur and Gulp.",
+  "author": "Tiago Braga <braga.tiago.93@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbragaf/ng2-traceur-gulp.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-live-server": "0.0.29",
+    "gulp-traceur": "^0.17.1",
+    "rtts_assert": "0.0.1",
+    "systemjs": "^0.19.6"
+  },
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.46"
+  }
+}

@@ -1,4 +1,4 @@
-# ng2-babel
+# ng2-traceur-gulp
 Angular2 with Traceur and Gulp.
 
 ##Getting Started

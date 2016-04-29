@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Angular2 with Traceur and Gulp</title>
+  
+  <script src="node_modules/traceur/bin/traceur-runtime.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+  <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+  <script src="node_modules/angular2/bundles/router.dev.js"></script>
+  <script src="node_modules/angular2/bundles/http.dev.js"></script>
+  <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+  <script src="node_modules/rxjs/bundles/Rx.js"></script>
+  
+</head>
+
+<body>
+  <application>Loading...</application>
+
+  <script>
+    System.config({
+      
+    });
+    
+    System.import('dist/bootstrap.js').catch(function (response) {
+      console.error(response);
+    });
+  </script>
+</body>
+
+</html>

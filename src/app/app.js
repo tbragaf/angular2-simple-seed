@@ -1,12 +1,11 @@
-import { Component, View, ElementRef } from 'angular2/angular2';
+import { Component, ElementRef } from 'angular2/core';
 
 @Component({
-  selector: 'app'
+  selector: 'application',
+  templateUrl: './app.html',
+  moduleId: __moduleName
 })
-@View({
-  templateUrl: 'app/app.html'
-})
-export class App {
+export class Application {
   constructor(elementRef : ElementRef) {
     this.elementRef = elementRef;
   }

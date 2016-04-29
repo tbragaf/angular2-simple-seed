@@ -11,12 +11,12 @@ gulp.task('serve', function () {
   var server = gls.static('/', port);
   server.start();
 
-  gulp.watch(['dist/**/*.js'], function (file) {
+  gulp.watch(['dist/**/*.js', 'dist/**/*.html', 'dist/**/*.css'], function (file) {
     server.notify.apply(server, [file]);
   });
 });
 
-gulp.task('copy', function () {
+gulp.task('copy:html', function () {
   return gulp.src('src/**/*.html')
     .pipe(gulp.dest('dist'));
 });
@@ -30,7 +30,7 @@ gulp.task('build', function () {
       typeAssertions: true,
       typeAssertionModule: 'rtts_assert/rtts_assert',
       types: true,
-      modules: 'instantiate' // Systemjs
+      modules: 'instantiate'
     }))
     .pipe(gulp.dest('dist'));
 });
@@ -39,4 +39,4 @@ gulp.task('clean', function () {
   return del('dist');
 });
 
-gulp.task('default', ['copy', 'build']);
+gulp.task('default', ['copy:html', 'build']);

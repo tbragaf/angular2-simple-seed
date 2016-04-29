@@ -11,4 +11,4 @@ Angular2 with Traceur and Gulp.
 
 4. Run 'gulp'
 
-5. Open broswer at: localhost:12345/dist
+5. Open broswer at: localhost:12345

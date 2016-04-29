@@ -1,7 +1,6 @@
-import { bootstrap, provide } from 'angular2/angular2';
-import { Router, RouteConfig, RouteParams, LocationStrategy, HashLocationStrategy, ROUTER_PROVIDERS, ROUTER_DIRECTIVES, ROUTER_PRIMARY_COMPONENT } from 'angular2/router';
-import { App } from './app/app.js';
+import { provide } from 'angular2/core';
+import { bootstrap } from 'angular2/platform/browser';
+import { ROUTER_PROVIDERS } from 'angular2/router';
+import { Application } from './app/app.js';
 
-bootstrap(App, [
-  provide(LocationStrategy, { useClass: HashLocationStrategy })
-]);
+bootstrap(Application, [ROUTER_PROVIDERS]);
